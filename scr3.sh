@@ -1,6 +1,6 @@
 #/bin/bash
 ln -sf	/usr/share/zoneinfo/US/Eastern	/etc/localtime
-echo "en_US.UTF-8" >> /etc/locale.gen
+echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 hwclock	--systohc
 echo "keymap=US" >> locale-gen
