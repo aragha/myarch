@@ -1,16 +1,17 @@
 #create my partitions
 echo "n
+p
 1
 
 +550M
-w" | fdisk /dev/sda
-echo "/n
-
-
+n
+p
+2
+ 
 +4G
-w" | fdisk /dev/sda
-echo "n
-
-
-
+n
+p
+3
+ 
+ 
 w" | fdisk /dev/sda
