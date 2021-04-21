@@ -15,7 +15,7 @@ echo "127.0.0.1	localhost
 
 #install grub 
 pacman	-S grub
-
+pacman -Syu efibootmgr dosfstools os-prober mtools
 mkdir /boot/EFI
 mount /dev/sda1   /boot/EFI
 grub-install	--target=x86_64-efi	--bootloader-id=grub-uefi	--recheck
