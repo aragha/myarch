@@ -1,8 +1,8 @@
 #/bin/bash
 ln -sf	/usr/share/zoneinfo/US/Eastern	/etc/localtime
 echo "en_US.UTF-8" >> /etc/locale.gen
-hwclock	--systohc
 locale-gen
+hwclock	--systohc
 echo "keymap=US" >> locale-gen
 
 #create hostname file
