@@ -1,5 +1,5 @@
 #/bin/bash
 #before CHROOT
-loadkeys US
+loadkeys us
 ip link
 timedatectl set-ntp true
