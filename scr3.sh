@@ -20,7 +20,7 @@ mkdir /boot/EFI
 mount /dev/sda1   /boot/EFI
 grub-install	--target=x86_64-efi	--bootloader-id=grub-uefi	--recheck
 #make grub config file
-grub-mkconfig	-o	/boot.grub/grub.cfg
+grub-mkconfig	-o	/boot/grub/grub.cfg
 
 #install other necessary tools
 pacman -Syu bison gcc make python texinfo patch
