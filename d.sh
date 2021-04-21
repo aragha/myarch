@@ -4,5 +4,4 @@ echo "d
 d
 2
 d
-3
-w" | fdisk /dev/sda
+wq" | fdisk /dev/sda
