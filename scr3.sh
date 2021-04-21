@@ -18,7 +18,7 @@ pacman	-S grub
 
 mkdir /boot/EFI
 mount /dev/sda1   /boot/EFI
-grub-install	--target=x86_64-efi	bootloader-id=grub-uefi	--recheck
+grub-install	--target=x86_64-efi	--bootloader-id=grub-uefi	--recheck
 #make grub config file
 grub-mkconfig	-o	/boot.grub/grub.cfg
 
