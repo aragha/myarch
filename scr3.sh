@@ -26,7 +26,6 @@ grub-mkconfig	-o	/boot/grub/grub.cfg
 #install other necessary tools
 pacman -Syu bison gcc make python texinfo patch
 
-pacman	-Syu networkmanager git vim
 git config --global core.editor "vim"
 #enable networkmanager
 systemctl enable 	NetworkManager
