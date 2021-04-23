@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 #before CHROOT
 loadkeys us
 ip link
