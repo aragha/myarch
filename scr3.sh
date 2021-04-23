@@ -4,7 +4,7 @@ ln -sf	/usr/share/zoneinfo/US/Eastern	/etc/localtime
 sed -i "s/#en_US.UTF-8/en_US.UTF-8/" /etc/locale.gen
 locale-gen
 hwclock	--systohc
-echo "keymap=US" >> locale-gen
+echo "keymap=US" >> /etc/vconsole.conf
 
 #create hostname file
 echo "archvbox"	/etc/hostname
