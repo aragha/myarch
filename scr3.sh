@@ -24,7 +24,7 @@ grub-install	--target=x86_64-efi	--bootloader-id=grub-uefi	--recheck
 grub-mkconfig	-o	/boot/grub/grub.cfg
 
 #install other necessary tools
-pacman -Syu bison gcc make python texinfo patch
+pacman -Syu networkmanager bison gcc make python texinfo patch
 
 git config --global core.editor "vim"
 #enable networkmanager
